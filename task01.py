@@ -23,6 +23,7 @@ def float_to_completed_integer(real_number: float) -> int:
 
 def get_digits_sum(any_number):
     no_point_number = float_to_completed_integer(any_number)
+    no_point_number = abs(no_point_number)
     sum = 0
     while no_point_number > 0:
         sum += no_point_number % 10
